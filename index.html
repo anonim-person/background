@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="script.js"></script>
+    <style media="screen">
+      #button{
+        height:30px;
+        width:200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" id="button" value="Random radial background" onclick="button()"> <br>
+    <input type="button" id="button" value="Random linear background" onclick="buttons()"> <br>
+    <input type="button" id="button" value="Random default background" onclick="buttonsa()"> <br>
+    <input type="button" id="button" value="Random repeating background" onclick="buttonsar()"> <br>
+    <script type="text/javascript">
+    var xa = Math.floor(Math.random() * 256);
+     var ya = Math.floor(Math.random() * 256);
+     var za = Math.floor(Math.random() * 256);
+     var bgColora = "rgb(" + xa + "," + ya + "," + za + ")";
+     document.body.style.background = bgColora;
+    </script>
+  </body>
+</html>
